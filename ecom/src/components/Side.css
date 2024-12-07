@@ -1,0 +1,46 @@
+/* List container */
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+/* Individual link item */
+.link-item {
+  margin: 5px 0;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #101010;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover state */
+.link:hover {
+  background-color: #5a5c5d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Active state */
+.link.active {
+  background-color: #010101;
+  color: white;
+}
+
+/* Disabled state */
+.link-item.disabled .link {
+  color: #6c757d;
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+  pointer-events: none;
+}
